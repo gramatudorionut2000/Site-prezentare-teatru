@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+<script src="scripts/script.js"></script>
+<style>
+.part{
+  margin:2% 3.5%; 
+  font-size:1.3vw; 
+  background-color: #A6A6A6; 
+  border-radius: 10px; 
+  padding: 1.5%; 
+  height: 16vw;
+}
+@media screen and (max-width: 600px){
+.part{
+  height: 35vw;
+  padding-top: 10vw;
+  font-size: 1.8vw;
+}
+}
+</style>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="Index.html" style="height:auto; margin: 0; padding: 0;" class="home"><img src="Imagini/logo-teatru-NEGRU.png" style=" width:100px; height:52px; padding-top:3px;"></a>
+  <div class="dropdown">
+    <button onclick="myFunction('m1')" class="dropbtn">TEATRU</button>
+    <div id="m1" class="dropdown-content">
+      <a href="Istoric.html">ISTORIC</a>
+      <a href="Sali_de_spectacol.html">SALI DE SPECTACOL</a>
+      <a href="Informatii_generale.html">INFORMATII GENERALE</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button onclick="myFunction('m2')" class="dropbtn">ECHIPA</button>
+    <div id="m2" class="dropdown-content">
+      <a href="Angajatii_teatrului.html">ANGAJATII TEATRULUI</a>
+      <a href="Trupe_de_actori.html">TRUPE DE ACTORI</a>
+    </div>
+  </div> 
+  <a href="Program.html">PROGRAM</a>
+  <a href="Bilete.html" class="active">BILETE</a>
+  <a href="Contact.html">CONTACT</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="Function()">&#9776;</a>
+</div>
+<div class="main">
+  <h1 style="margin : 1.5% 0 0 1.5%; padding-left:3%; font-size:1.8vw; 
+	border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">REZERVARI TELEFONICE<h1>
+  <div class="part">
+    <img src="Imagini/Phone.png" style="width:13vw; height:13vw; margin: 0% 2.5% 1.5% 5.5%; border-radius: 50%; float: left;">
+	Rezervarea biletelor la teatru se poate face telefonic la numarul de mai jos:
+	</br></br></br>
+	<p style="background-color: #AB5454; border-radius: 10px; width: 48%; margin-left: 36.3%; text-align: center; padding: 1% 5% 1% 5%;">
+	AGENȚIA DE BILETE: 0233 452 324
+	</p>
+  </br>
+  </div>
+  <h1 style="margin : 1.5% 0 0 1.5%; padding-left:3%; font-size:1.8vw; 
+	border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">REZERVARI ONLINE<h1>
+  <div class="part">
+    <img src="Imagini/Mail.png" style="width:13vw; height:13vw; margin: 0% 2.5% 1.5% 5.5%; border-radius: 50%; float: left;">
+
+	Pentru cereri formale, sugestii sau contact online puteti completa formularul gasit in linkul de mai jos:
+	</br></br></br>
+	<p style="background-color: #AB5454; border-radius: 10px; width: 40%; margin-left: 40%; text-align: center; padding: 1% 5% 1% 5%;">
+	<a href="Formular_de_rezervare.html" style="color: #000000; text-decoration: none;">FORMULAR DE REZERVARE</a>
+	</p>
+  </div>
+</br></br></br>
+</div>
+</body>
+</html> 

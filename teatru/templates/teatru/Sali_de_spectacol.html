@@ -1,0 +1,17 @@
+{% extends 'teatru/navbar.html' %}
+{% block content %}
+<body>
+<div class="main">
+<h1 style="margin : 1.5% 0 0 1.5%; padding-left:1.5%; font-size:2vw; 
+border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">SALI DE SPECTACOL<h1>
+</br>
+<div>
+    {% for stage in stages %}    
+<h1 style="font-size: 1.75vw; color: #8A0202; text-align: center; margin-top: 1.5%;">{{stage.title}}<h1>
+<img src="/media/{{stage.image}}" style="margin-top: 1.5%; margin-left: 17%; width:70%; border-radius: 1vw;">
+    {% endfor %}
+</div>
+</br></br></br>
+</div>
+{% endblock content %}
+</body>

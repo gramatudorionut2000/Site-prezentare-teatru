@@ -1,0 +1,51 @@
+{% extends 'teatru/navbar.html' %}
+{% load static %}
+{% block style %}
+<style>
+.part{
+  margin:2% 3.5%; 
+  font-size:1.3vw; 
+  background-color: #A6A6A6; 
+  border-radius: 10px; 
+  padding: 1.5%; 
+  height: 16vw;
+}
+@media screen and (max-width: 600px){
+.part{
+  height: 35vw;
+  padding-top: 10vw;
+  font-size: 1.8vw;
+}
+}
+</style>
+{% endblock style %}
+{% block content %}
+<body>
+<div class="main">
+  <h1 style="margin : 1.5% 0 0 1.5%; padding-left:3%; font-size:1.8vw; 
+	border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">REZERVARI TELEFONICE<h1>
+  <div class="part">
+    <img src="{% static 'icons/Phone.png' %}" style="width:13vw; height:13vw; margin: 0% 2.5% 1.5% 5.5%; border-radius: 50%; float: left;">
+	Rezervarea biletelor la teatru se poate face telefonic la numarul de mai jos:
+	</br></br></br>
+	<p style="background-color: #AB5454; border-radius: 10px; width: 48%; margin-left: 36.3%; text-align: center; padding: 1% 5% 1% 5%;">
+	AGENȚIA DE BILETE: 0233 452 324
+	</p>
+  </br>
+  </div>
+  <h1 style="margin : 1.5% 0 0 1.5%; padding-left:3%; font-size:1.8vw; 
+	border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">REZERVARI ONLINE<h1>
+  <div class="part">
+    <img src="{% static 'icons/Mail.png'%}" style="width:13vw; height:13vw; margin: 0% 2.5% 1.5% 5.5%; border-radius: 50%; float: left;">
+
+	Pentru cereri formale, sugestii sau contact online puteti completa formularul gasit in linkul de mai jos:
+	</br></br></br>
+	<p style="background-color: #AB5454; border-radius: 10px; width: 40%; margin-left: 40%; text-align: center; padding: 1% 5% 1% 5%;">
+	<a href="{% url 'users-reservation_form' %}" style="color: #000000; text-decoration: none;">FORMULAR DE REZERVARE</a>
+	</p>
+  </div>
+</br></br></br>
+</div>
+</body>
+{% endblock content %}
+

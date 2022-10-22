@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block style %}
+    <style>
+    </style>
+    {% endblock style %}
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <script src="{% static 'scripts/script.js' %}"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="{% url 'teatru-home' %}" style="height:auto; margin: 0; padding: 0;" class="home"><img src="{% static 'icons/logo-teatru-NEGRU.png' %}" style=" width:100px; height:52px; padding-top:3px;"></a>
+        <div class="dropdown">
+          <button onclick="myFunction('m1')" class="dropbtn">TEATRU</button>
+          <div id="m1" class="dropdown-content">
+            <a href="{% url 'teatru-istoric' %}">ISTORIC</a>
+            <a href="{% url 'teatru-sali_de_spectacol' %}">SALI DE SPECTACOL</a>
+            <a href="{% url 'teatru-informatii_generale' %}">INFORMATII GENERALE</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="myFunction('m2')" class="dropbtn">ECHIPA</button>
+          <div id="m2" class="dropdown-content">
+            <a href="{% url 'teatru-angajatii_teatrului' %}">ANGAJATII TEATRULUI</a>
+            <a href="{% url 'teatru-trupe_de_actori' %}">TRUPE DE ACTORI</a>
+          </div>
+        </div> 
+        <a href="{% url 'teatru-program' %}">PROGRAM</a>
+        <a href="{% url 'users-tickets' %}">BILETE</a>
+        <a href="{% url 'users-contact' %}">CONTACT</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="Function()">&#9776;</a>
+      </div>
+      {% block content %}
+      <div class="main">
+      </div>
+      {% endblock content %}
+{% block script %}
+<script>
+</script>
+{% endblock script %}
+</body>
+</html>

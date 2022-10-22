@@ -1,0 +1,71 @@
+{% extends 'teatru/navbar.html' %}
+{% load static %}
+{% block style %}
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  font-size: 1vw;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.trimite {
+  background-color: #CF8F8F;
+  color: black;
+  width: 10%;#ccc
+  font-size:70%;
+  float: right;
+  padding: 1vw;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.trimite:hover {
+  background-color: #AB5454;
+  color: white;
+}
+
+.container {
+  font-size: 1.5vw;
+  border-radius: 5px;
+  background-color: #e4e4e4;
+  padding: 4vw 4vw 6vw 4vw;
+  width:80%;
+  left: 10%;
+  position: relative;
+  top: 15px;
+}
+</style>
+{% endblock style %}
+{% block content %}
+<div class="main">
+<h1 style="margin : 1.5% 0 0 1.5%; padding-left:1.5%; font-size:2vw; 
+border-bottom-style: solid; border-bottom-color: #8A0202; border-bottom-width:3px;">FORMULAR DE CONTACT<h1>
+<div class="container">
+    <label for="name">NUMELE/PRENUMELE DVS.</label>
+    <input type="text" id="name" name="name" placeholder="Numele dvs..">
+
+    <label for="Contact">E-MAIL-UL DVS.</label>
+    <input type="text" id="contact" name="contact" placeholder="Contactul dvs...">
+
+    <label for="subiect">SUBIECT</label>
+    <select id="subiect" name="subiect">
+      <option value="reclamatie">Reclamatie</option>
+      <option value="sugestie">Sugestie</option>
+      <option value="interbare">Intrebare</option>
+    </select>
+
+    <label for="continut">CONTINUT</label>
+    <textarea id="continut" name="continut" placeholder="Scrieti ceva.." style="height:200px; font-family:sans-serif;"></textarea>
+
+    <button class="trimite">Trimite</button>
+</div>
+</br></br></br>
+</div>
+</body>
+{% endblock content %}
+
